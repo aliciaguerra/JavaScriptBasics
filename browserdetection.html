@@ -1,0 +1,38 @@
+<HTML>
+<HEAD><TITLE>Simple Browser Detection Script</TITLE>
+<SCRIPT LANGUAGE="JavaScript" "TYPE"="text/javascript">
+<!--Hide from browsers that do not support JavaScript
+
+//If the user is running IE, automatically load the
+//HTML file ie_version.htm
+//Beginning of an if/else statement
+//"Microsoft Internet Explorer" is a string literal
+//== is a comparison operator
+if(navigator.appName=="Microsoft Internet Explorer"){
+//"ie_version.htm" is a string literal
+window.location="ie_version.htm"
+//= is a comparison operator
+}
+
+//Otherwise, if the user is running NetScape, load the HTML file netscape_version.htm
+else{
+Nested if/else statement:
+if(navigator.appName="NetScape"){
+// == is a comparison operator
+window.location="netScape_version.htm"
+//=is a comparison operator
+}
+
+//If the user is running some other browser
+//display a message and continue loading this generic webpage
+else{
+document.write("You're not running Microsoft IE or Netscape.")
+}
+}
+//-->Finish hiding
+</SCRIPT>
+</HEAD>
+<BODY>
+This is the generic body of my web page
+</BODY>
+</HTML>
