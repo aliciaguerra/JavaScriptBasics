@@ -35,4 +35,7 @@ only changes the reference rather than the object itself. For example, after the
 `setB=setA;` <br>
 `setB[2]=0;` <br>
 `alert(setA);` <br>
-
+Similarly, after the next bit of code is executed, x is a pointer to an empty array. <br>
+`z=[5];` <br>
+`x=z;` <br>
+`z.pop();` <br>
