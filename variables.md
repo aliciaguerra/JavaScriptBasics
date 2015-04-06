@@ -45,3 +45,11 @@ Arrays are accessed using the square brackets: <br>
 myArray[2]="Hello"; <br>
 var text=myArray[2]; <br>
 There is a limit to the number of items that can be stored in the array. <br>
+<b>Object Types</b>
+An object within JavaScript is created using the new operator:
+var<myObject>=new Object(); <br>
+Objects can also be created with the object notation, which uses curly braces: <br>
+var myObject={}; <br>
+JavaScript objects can be built using inheritance and overriding, and you can use polymorphism. There
+are no scope modifiers, with all the properties and methods having public access. <br>
+You can access browser built-in objects and provided through browser JavaScript extensions.
