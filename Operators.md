@@ -39,3 +39,11 @@ Similarly, after the next bit of code is executed, x is a pointer to an empty ar
 `z=[5];` <br>
 `x=z;` <br>
 `z.pop();` <br>
+All of the above operators have corresponding assignment operators of the form operator=. For example, x operator=y is just a convenient abbreviation for x=x operator y. <br><br>
+<table>
+<tr>
+<td>Arithmetic</td>
+<td>Logical</td>
+<td>Shift</td>
+</tr>
+</table>
