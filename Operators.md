@@ -30,5 +30,9 @@ These operators are kept for parity with related programming languages, but are 
 <b>Assignment Operators</b><br>
 The assignment operator "=" assigns a value to a variable. Primitive types, such as strings and numbers are assigned directly,
 however function and object names are just pointers to the respective function or object. In this case, the assignment operator 
-only changes the reference rather than the object itself. For example, after the following code is executed, "0, 1, 0" will be alerted, even though setA was passed to the alert, and setB was changed. This is, because they are two references to the same object.
+only changes the reference rather than the object itself. For example, after the following code is executed, "0, 1, 0" will be alerted, even though setA was passed to the alert, and setB was changed. This is, because they are two references to the same object. <br>
+`setA=[1,0,0];` <br>
+`setB=setA;` <br>
+`setB[2]=0;` <br>
+`alert(setA);` <br>
 
