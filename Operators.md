@@ -22,4 +22,13 @@ Java, the numbers and their operation results are not guaranteed to be integers.
 <b>Bitwise Operators</b> <br>
 There are seven bitwise operators: "&", "|", "^", "~", ">>", "<<", and ">>>". <br>
 These operators convert their operands to integers (truncuating any floating point to zero), and perform the specified bitwise
+operation on them. The logical bitwise operators, "&", "|", and "^", perform the and, or, and xor on each individual bit and provides the return value. The ~ ("not operator) inverts all bits within the integer, and usually appears in combination with the logical bitwise operators. <br>
+Two bit-shift operators, ">>", "<<", move the bits in one direction that has a similar effect to multiplying or dividing by
+a power of two. The final bit shift operator, ">>>", operates the same way, but does not preserve the sign bit when shifting. <br>
+These operators are kept for parity with related programming languages, but are unlikely to be used in most JavaScript programs.
+<br>
+<b>Assignment Operators</b><br>
+The assignment operator "=" assigns a value to a variable. Primitive types, such as strings and numbers are assigned directly,
+however function and object names are just pointers to the respective function or object. In this case, the assignment operator 
+only changes the reference rather than the object itself. For example, after the following code is executed, "0, 1, 0" will be alerted, even though setA was passed to the alert, and setB was changed. This is, because they are two references to the same object.
 
