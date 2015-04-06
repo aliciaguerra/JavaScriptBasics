@@ -35,4 +35,13 @@ A complex type is an object, be it either standard or custom made. Its home is t
 
 <b>Array Type</b> <br>
 In JavaScript, all arrays are untyped, so you can put everything you want in an array and worry about that later. Arrays are
-objects, they have methods and properties you can invoke at will. For example, the .length property indicates how many properties are currently in the array. If you add more items to the array, the value of the .length gets larger.
+objects, they have methods and properties you can invoke at will. For example, the .length property indicates how many properties are currently in the array. If you add more items to the array, the value of the .length gets larger. You can build yourself an array by using the statement new followed by the Array, as shown below. <br>
+var myArray=new Array(0,2,4); <br>
+var myOtherArray=new Array(); <br>
+Arrays can also be created with the array notation, which uses square brackets: <br>
+var myArray=[0,2,4]; <br>
+var myOtherArray=[]; <br>
+Arrays are accessed using the square brackets: <br>
+myArray[2]="Hello"; <br>
+var text=myArray[2]; <br>
+There is a limit to the number of items that can be stored in the array. <br>
