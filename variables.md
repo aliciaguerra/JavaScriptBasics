@@ -1,6 +1,6 @@
 #Variable Declaration
 Vairables are commonly explicitly declared by the var statement, as shown below:<br>
-var c;<br>
+var c; <br>
 The above variable is created, but has the default value of undefined. To be of value, the variable needs
 to be initialized: <br>
 var c=0; <br>
@@ -10,5 +10,29 @@ But make sure to declare a variable with var before (or while) assigning to it; 
 
 #Primitive Types
 Primitive types are types provided by the system, in this case by JavaScript. Primitive types for JavaScript are booleans,
-numbers, and text. In addition to the primitive types, users may define their own classes.
+numbers, and text. In addition to the primitive types, users may define their own classes. <br>
 
+The primitive types are treated by JavaScript as value types and when you pass them around they go as values. Some values, such
+as strings, allow method calls. 
+
+#Boolean Type
+Boolean types can have only two possible variables, true or false. <br>
+var mayday=false;  <br>
+var birthday=true; <br>
+
+#Numeric Types
+You can use integer and double types on your variables, but they are treated as a numeric type. <br>
+var sal=20; <br>
+var pal=12.1; <br>
+
+#String Types
+The string and char types are all strings, so you can build any string literal you wished for. <br>
+var myName="Some name"; <br>
+var myChar='f'; <br>
+
+#Complex Types
+A complex type is an object, be it either standard or custom made. Its home is the heap and goes everywhere by reference. <br>
+
+<b>Array Type</b> <br>
+In JavaScript, all arrays are untyped, so you can put everything you want in an array and worry about that later. Arrays are
+objects, they have methods and properties you can invoke at will. For example, the .length property indicates how many properties are currently in the array. If you add more items to the array, the value of the .length gets larger.
