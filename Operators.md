@@ -170,4 +170,20 @@ For stricter compares use === and !=== <br>
 || - or <br>
 ! - not <br>
 The logical operators are and, or, and not. The && and ||  operators accept two operands and provides their associated logical result, while the third accepts one, and returns its logical negation. && and || short circuit operators. If the result is guaranteed after evaluation of the first operand, it skips evaluation of the second operand. <br>
-Technically, the exact return value of these two operators is also equal to the final operand that is evaluated.
+Technically, the exact return value of these two operators is also equal to the final operand that is evaluated. Due to this, the && operator is also known as the default operator.
+`function handleevent(event){` <br>
+`event=event||window.event;` <br>
+`var target=event.target||event.srcElement;` <br>
+`if(target && target.nodeType == 1 && target.nodeName=='A' {` <br>
+`//...` <br>
+`}` <br>
+`}` <br>
+The ! operator determines the inverse of the given value, and returns the boolean: true values become false, or false values become true. Note: JavaScript represents a false by either a boolean false, the number 0, an empty string, or the built in undefined or null type. Any other value is treated as true. <br><br>
+<b>Other Operators</b><br>
+`?:` <br>
+The ?: operator (also called the "ternary" operator). <br>
+`var target=(a==b) ? c:d` <br>
+Be cautious though in its use. Even though you can replace verbose and complex if/then/else chains with ternary operators, it may not be a good idea to do so. You can replace <br>
+`if(p&q) {` <br>
+`return a;` <br>
+`} else {` <br>
