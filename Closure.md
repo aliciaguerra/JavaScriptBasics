@@ -1,0 +1,54 @@
+#JavaScript Closures
+JavaScript variables can belong to the local or global scope. Private variables can be made possible with closures.
+
+#Global Variables
+A function can access all variables defined inside the function, like this:
+```
+function myFunction() {
+var a=4;
+return a*a;
+}
+```
+But a function can also access variables defined outside the function, like this:
+```
+var a=4;
+function myFunction() {
+return a*a;
+}
+```
+In the last example, a is a global variable. <br>
+In a web page, global variables belong to a window object. <br>
+Global variables can be used (and changed) by all scripts in the page (and in the window). <br>
+In the first example, a is a local variable. <br>
+A local variable can only be used inside the function where it is defined. It is hidden from other functions
+and other scripting code. <br>
+Global and local variables with the same name are different variables. Modifying one does not modify the other. <br>
+
+#Variable Lifetime
+Global variables live as long as your application (your window/web page) lives. <br>
+Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished.
+
+#A Counter Dilemma
+Suppose you want to use a variable for counting something, and you want this counter to be available for all functions. <br>
+You could use a global variable, and a function to increase the counter.
+```
+var counter=0;
+function add() {
+counter+=1;
+add();
+add();
+add();
+//the counter is now equal to 3
+}
+```
+The counter should only be changed by the add() function. The problem is, that any script on the page can change the counter 
+without calling add(): <br>
+```
+function add(){
+var counter=0;
+counter+=1;
+}
+add();
+add();
+add();
+```
