@@ -70,4 +70,4 @@ return counter;
 ```
 This could have solved the counter dilemma, if we reach the plus() function from the outside. <br>
 We also need a way to execute counter=0 only once. <br>
-We need 
+We need a closure. <br>
