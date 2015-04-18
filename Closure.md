@@ -51,4 +51,23 @@ counter+=1;
 add();
 add();
 add();
+//the counter should now be 3, but it does not work!
 ```
+It does not work! Every time I call the add() function, the counter is set to 1. <br>
+A JavaScript linear function can solve this.
+
+#JavaScript Nested Functions
+All functions have access to the global scope. <br>
+In fact, in JavaScript, all functions have access to the scope "above" them. <br>
+In this example, the inner function plus() has access to the counter variable in the parent function:
+```
+function(){
+var counter=0;
+function plus() {counter+=1;}
+plus();
+return counter;
+}
+```
+This could have solved the counter dilemma, if we reach the plus() function from the outside. <br>
+We also need a way to execute counter=0 only once. <br>
+We need 
